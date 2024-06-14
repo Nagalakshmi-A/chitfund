@@ -1,0 +1,79 @@
+const mongoose = require('mongoose')
+const subscriberSchema = new mongoose.Schema({
+  subscriberId:{
+    type:String
+  },
+  firstName:{
+    type:String
+  },
+  lastName:{
+    type:String
+  },
+  aliasName:{
+    type:String
+  },
+  contact:{
+    type:String
+  },
+  place:{
+    type:String
+  },
+  gender:{
+    type:String
+  },
+  dob:{
+    type:Date
+  },
+  occupation:{
+    type:String
+  },
+  area:{
+    type:String
+  },
+  accountNumber:{
+    type:String
+  },
+  ifsc:{
+    type:String
+  },
+  bankName:{
+    type:String
+  },
+  upi_id:{
+    type:String
+  },
+  panCardNumber:{
+    type:String
+  },
+  aadharNumber:{
+    type:String
+  },
+  passbookNumber:{
+    type:String
+  },
+  nomineeName:{
+    type:String
+  },
+  nomineeRelationship:{
+    type:String
+  },
+  nomineeAddress:{
+    type:String
+  },
+  nomineeOccupation:{
+    type:String
+  },
+  nomineeGender:{
+    type:String
+  },
+  nomineeAadhar:{
+    type:String
+  },
+  nomineeDOB:{
+    type:Date
+  }
+  
+},{timestamps:true}) 
+
+const chitSubscriber = mongoose.model('chitSubscriber',subscriberSchema)
+module.exports = chitSubscriber
